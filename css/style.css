@@ -3,42 +3,38 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #F4F7FA;
     color: #334155;
     line-height: 1.6;
 }
-
 header {
     background-color: #0F172A;
     color: #FFFFFF;
     text-align: center;
     padding: 50px 20px;
 }
-
 header h1 {
     font-size: 40px;
     margin-bottom: 10px;
 }
-
 header p {
     font-size: 20px;
     color: #CBD5E1;
 }
 nav {
     background-color: #1E293B;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
     padding: 15px;
 }
 nav a {
     color: #FFFFFF;
     text-decoration: none;
-    margin: 0 15px;
     font-weight: bold;
 }
-
 nav a:hover {
     color: #38BDF8;
 }
@@ -47,7 +43,6 @@ main {
     margin: 40px auto;
     padding: 0 20px;
 }
-
 section{
     background-color: #FFFFFF;
     padding: 30px;
@@ -59,7 +54,6 @@ section h2{
     margin-bottom: 15px;
     color: #0F172A;
 }
-
 section h3 {
     margin-top: 20px;
     margin-bottom: 5px;
@@ -68,11 +62,76 @@ section h3 {
 section p{
     line-height: 1.7;
 }
-
+.contacto h2 {
+    margin-bottom: 20px;
+}
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contacto label {
+    font-weight: bold;
+    color: #0F172A;
+}
+.contacto input,
+.contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CBD5E1;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #F8FAFC;
+}
+.contacto input:focus,
+.contacto textarea:focus {
+    outline: none;
+    border-color: #2563EB;
+}
+.contacto button {
+    width: fit-content;
+    padding: 10px 25px;
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.contacto button:hover {
+    background-color: #1D4ED8;
+}
 footer {
     background-color: #0B1120;
     color: #CBD5E1;
     text-align: center;
     padding: 25px;
     margin-top: 40px;
+}
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+    }
+    main {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+    section {
+        width: 100%;
+        padding: 25px 20px;
+        margin-bottom: 20px;
+    }
+    header {
+        padding: 35px 20px;
+    }
+    header h1 {
+        font-size: 28px;
+    }
+    header p {
+        font-size: 18px;
+    }
 }
