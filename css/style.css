@@ -27,8 +27,12 @@ nav {
     background-color: #1E293B;
     display: flex;
     justify-content: center;
-    gap: 30px;
     padding: 15px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
 }
 nav a {
     color: #FFFFFF;
@@ -37,6 +41,14 @@ nav a {
 }
 nav a:hover {
     color: #38BDF8;
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 28px;
+    cursor: pointer;
 }
 main {
     max-width: 900px;
@@ -110,28 +122,86 @@ footer {
     margin-top: 40px;
 }
 @media (max-width: 600px) {
+
     nav {
         flex-direction: column;
         align-items: center;
         gap: 15px;
         padding: 20px;
     }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
     main {
         margin: 20px auto;
         padding: 0 15px;
     }
+
     section {
         width: 100%;
         padding: 25px 20px;
         margin-bottom: 20px;
     }
+
     header {
         padding: 35px 20px;
     }
+
     header h1 {
         font-size: 28px;
     }
+
     header p {
         font-size: 18px;
     }
+}
+body.dark-mode {
+    background-color: #0F172A;
+    color: #E2E8F0;
+}
+
+body.dark-mode header {
+    background-color: #020617;
+}
+
+body.dark-mode nav {
+    background-color: #020617;
+}
+
+body.dark-mode section {
+    background-color: #1E293B;
+    color: #E2E8F0;
+}
+
+body.dark-mode section h2 {
+    color: #FFFFFF;
+}
+
+body.dark-mode section h3 {
+    color: #38BDF8;
+}
+
+body.dark-mode .contacto label {
+    color: #E2E8F0;
+}
+
+body.dark-mode .contacto input,
+body.dark-mode .contacto textarea {
+    background-color: #0F172A;
+    color: #FFFFFF;
+    border-color: #475569;
 }
