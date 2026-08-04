@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFE EL TRIGAL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header id="inicio">
+    <h1>CAFE EL TRIGAL</h1>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#cafe">Nuestro cafe</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+<main>
+    <section id="cafe">
+        <h2>Nuestro cafe</h2>
+        <p>
+            Aqui tenemos el mejor cafe de la ciudad, ven a visitarnos y degusta de la variedad de bebidas que ofrecemos.
+        </p>
+        <ul>
+            <li>Cafe americano - Bs 12</li>
+            <li>Capuchino - Bs 18</li>
+            <li>Submarino - Bs 15</li>
+        </ul>
+    </section>
+    <section id="contacto">
+        <h2>Haz tu pedido</h2>
+        <form>
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" required>
+            <label for="correo">Correo electronico</label>
+            <input type="email" id="correo" required>
+            <label for="pedido">Tu pedido</label>
+            <textarea id="pedido"></textarea>
+        </form>
+        <button type="button" id="btn-confirmar">
+            CONFIRMAR PEDIDO
+        </button>
+        <p id="mensaje" class="oculto"></p>
+    </section>
+</main>
+<footer>
+    Parcial 1 - Joel Marcos Canaviri Vargas - 3 de agosto de 2026
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
