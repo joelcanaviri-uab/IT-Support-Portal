@@ -205,3 +205,25 @@ body.dark-mode .contacto textarea {
     color: #FFFFFF;
     border-color: #475569;
 }
+.aviso {
+    display: none;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.aviso.error {
+    display: block;
+    background-color: #FEE2E2;
+    color: #B91C1C;
+    border: 1px solid #FCA5A5;
+}
+
+.aviso.exito {
+    display: block;
+    background-color: #DCFCE7;
+    color: #166534;
+    border: 1px solid #86EFAC;
+}
